@@ -14,7 +14,7 @@ class Form extends React.Component {
     }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
+      alert('Searching database for ...: ' + this.state.value);
       event.preventDefault();
     }
   
@@ -22,7 +22,7 @@ class Form extends React.Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name:
+            Class Type:
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />
