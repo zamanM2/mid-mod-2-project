@@ -19,7 +19,60 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>import React, {Component} from 'react'
+import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Home from './Components/Home';
+import Classes from './Components/Classes';
+import Teachers from './Components/Teachers';
+import Form from './Components/Form';
+
+class Teacher {
+  constructor(name, difficulty, looks){
+    this.name = name;
+    this.difficulty= difficulty;
+    this.looks= looks;
+  }
+  
+}
+
+let Teacher1 = this.
+
+
+class App extends Component{
+  state={
+
+    user:null
+  };
+  render() {
+    // const { loading } = this.state;
+
+    // if (loading) {
+    //   return <p>Loading..</p>;
+
+    return (
+      <Router>
+        <div>
+          <Form />
+          
+          <Route
+            exact path="/" component={Home} />
+          <Route exact path="/classes" component={Classes} />
+          <Route exact path="/teachers" component={Teachers} />
+          
+        </div>
+
+       
+
+      </Router>
+    );
+  };
+ 
+  }
+
+
+
+export default App;
   );
 }
 
