@@ -5,6 +5,11 @@ function People(props) {
     return (
         <div className= "chars">
            
+            {/* <img src={props.imgUrl}/>
+            <h3>{props.name}</h3>
+            <p>Name: {props.name}</p> */}
+    
+
             <h1>Luke SkyWalker</h1>
             <h1>C-3PO</h1>
             <h1>R2-d2</h1>

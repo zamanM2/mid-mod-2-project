@@ -41,6 +41,8 @@ class App extends Component{
   render() {
    
     return (
+        
+
       <Router>
         <div>
           <Form results = {this.state.results} />
@@ -52,9 +54,7 @@ class App extends Component{
               <li>
                 <Link to="/people">People</Link>
               </li>
-              {/* <li>
-                <Link to="/users">Users</Link>
-              </li> */}
+             
             </ul>
           </nav>
   
@@ -62,9 +62,7 @@ class App extends Component{
             <Route path="/people">
               <People />
             </Route>
-            {/* <Route path="/users">
-              <Users />
-            </Route> */}
+            
             <Route path="/">
               <Home />
             </Route>
