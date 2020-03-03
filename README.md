@@ -1,3 +1,8 @@
+https://afternoon-beyond-25365.herokuapp.com/?
+
+This project uses a Fetch API to bring back the user its numeric search value for a Star wars character with various data. They will then be able to rate the character.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
