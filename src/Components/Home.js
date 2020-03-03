@@ -5,7 +5,7 @@ function Home() {
      
     return (
         <div>
-            <h1>Homeyy</h1>
+            <h1> Geekdom Starwars</h1>
             
         </div>
     )

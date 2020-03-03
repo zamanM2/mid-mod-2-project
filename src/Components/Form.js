@@ -32,8 +32,9 @@ class Form extends React.Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
-            Class Type:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            Data Base:
+            <input type="text" value={this.state.value} onChange={this.handleChange} 
+            />
           </label>
           <input type="submit" value="Submit" />
         </form>

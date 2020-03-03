@@ -33,16 +33,13 @@ class App extends Component{
       })
       console.log(this.state.results)
       console.log(this.state.data)
+      
     })
     
 } 
  
   render() {
-    // const { loading } = this.state;
-
-    // if (loading) {
-    //   return <p>Loading..</p>;
-
+   
     return (
       <Router>
         <div>
