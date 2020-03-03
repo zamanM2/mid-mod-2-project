@@ -18,6 +18,7 @@ class App extends Component{
       data: [],
       isloaded: false,
     }
+    this.loop = this.loop.bind(this)
   };
 
   componentDidMount(){
@@ -26,6 +27,7 @@ class App extends Component{
       return response.json();
     })
     .then((data) => {
+      // {results.map((result,data))}
       this.setState({
         results: data.results,
         data: data,
@@ -37,6 +39,12 @@ class App extends Component{
     })
     
 } 
+
+loop(){
+  for(let i= 0; i<this.state.results.length; i++){
+    console.log(this.state.results[i])
+  }
+}
  
   render() {
    
@@ -67,6 +75,9 @@ class App extends Component{
               <Home />
             </Route>
           </Switch>
+        </div>
+        <div>
+          <button onClick={this.loop}>Data</button>
         </div>
       </Router>
      );
