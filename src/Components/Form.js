@@ -18,9 +18,9 @@ class Form extends React.Component {
   
     handleSubmit(event) {
 
-      let userInput = this.state.value.toIint();
-
-      //this.state.resultItem.name
+       let userInput = this.state.value.parseInt();
+        // console.log("user " + userInput)
+      let result = this.state.resultItem.name;
       this.setState({resultItem: this.props.results[userInput]});
       alert('Searching database for ...: ' + this.state.value);
       event.preventDefault();

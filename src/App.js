@@ -31,8 +31,8 @@ class App extends Component{
         data: data,
         isloaded: true,
       })
-      console.log(this.state.results)
-      console.log(this.state.data)
+      // console.log(this.state.results)
+      // console.log(this.state.data)
       
     })
     
@@ -41,7 +41,7 @@ class App extends Component{
   render() {
    
     return (
-        
+      
 
       <Router>
         <div>

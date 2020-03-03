@@ -21,3 +21,7 @@ link{
   text-align: center;
   justify-content: center;
 }
+
+body {
+  background-image: linear-gradient(to right, rgb(0, 225, 255) , purple);
+}
