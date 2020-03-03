@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import './App.css';
-// import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Home from './Components/Home';
-// import Classes from './Components/Classes';
 import People from './Components/People';
 import Form from './Components/Form';
 import {
@@ -12,40 +10,32 @@ import {
   Link
 } from "react-router-dom";
 
-// class Teacher {
-//   constructor(name, difficulty, looks){
-//     this.name = name;
-//     this.difficulty= difficulty;
-//     this.looks= looks;
-//   }
-  
-// }
-
-// let Teacher1 = this.
-
-
 class App extends Component{
   constructor(props){
     super(props);
     this.state= {
+      results : [],
       data: [],
       isloaded: false,
     }
   };
 
   componentDidMount(){
-    fetch('url')
-    then((response) => {
+    fetch('https://swapi.co/api/people/')
+    .then((response) => {
       return response.json();
     })
     .then((data) => {
       this.setState({
-        data: json,
+        results: data.results,
+        data: data,
         isloaded: true,
       })
+      console.log(this.state.results)
+      console.log(this.state.data)
     })
-    console.log(this.props)
-}
+    
+} 
  
   render() {
     // const { loading } = this.state;
@@ -56,7 +46,7 @@ class App extends Component{
     return (
       <Router>
         <div>
-          <Form />
+          <Form results = {this.state.results} />
           <nav>
             <ul>
               <li>

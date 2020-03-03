@@ -3,7 +3,9 @@ import React, {Component} from 'react'
 class Form extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {
+        value:" ",
+        resultItem: {}};
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -11,12 +13,20 @@ class Form extends React.Component {
   
     handleChange(event) {
       this.setState({value: event.target.value});
+
     }
   
     handleSubmit(event) {
+
+      let userInput = this.state.value.toIint();
+
+      //this.state.resultItem.name
+      this.setState({resultItem: this.props.results[userInput]});
       alert('Searching database for ...: ' + this.state.value);
       event.preventDefault();
     }
+
+  
   
     render() {
       return (

@@ -6,6 +6,7 @@ function Home() {
     return (
         <div>
             <h1>Homeyy</h1>
+            
         </div>
     )
 }
